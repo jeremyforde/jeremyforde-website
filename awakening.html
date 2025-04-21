@@ -29,18 +29,22 @@
     a:hover {
       text-decoration: underline;
     }
+      .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
     nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-
 nav li {
   position: relative;
   margin-right: 20px;
 }
-
 nav li ul {
   display: none;
   position: absolute;
@@ -49,11 +53,9 @@ nav li ul {
   list-style: none;
   z-index: 999;
 }
-
 nav li:hover ul {
   display: block;
 }
-
 nav a {
   color: #ffd700;
   text-decoration: none;
