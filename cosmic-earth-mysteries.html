@@ -54,6 +54,37 @@
       font-size: 14px;
       color: #888;
     }
+    nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  background-color: #0a0a0f;
+  padding: 10px;
+  list-style: none;
+  z-index: 999;
+}
+
+nav li:hover ul {
+  display: block;
+}
+
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+}
   </style>
 </head>
 <body>
@@ -62,6 +93,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="cosmic-earth-mysteries.html">Cosmic Earth Mysteries</a></li>
+        <li><a href="awakening.html">Awakening</a></li>
         <li><a href="https://www.tiktok.com/@jeremyforde.com" target="_blank">TikTok</a></li>
       </ul>
     </nav>
