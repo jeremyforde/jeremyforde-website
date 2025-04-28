@@ -189,3 +189,9 @@ footer {
   opacity: 1;
 }
 
+.sigil-image {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
