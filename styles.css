@@ -143,4 +143,49 @@ footer {
   nav li {
     margin: 10px 0;
   }
+  
+/* Sigil Gallery Grid */
+.sigil-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
 }
+
+.sigil-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.sigil-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.sigil-item:hover img {
+  transform: scale(1.05);
+}
+
+.sigil-item p {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffd700;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-weight: bold;
+}
+
+.sigil-item:hover p {
+  opacity: 1;
+}
+
