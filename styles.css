@@ -178,7 +178,59 @@ footer {
   .divider:before {
     font-size: 18px;
   }
+/* Navigation Styles */
+nav {
+  text-align: center;
+  margin-bottom: 40px;
 }
+
+nav ul.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #8c5c3b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #8c5c3b;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  nav ul.nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f4ef;
+    margin-top: 20px;
+  }
+
+  nav ul.nav-list.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
 
 
 /* Footer (if needed) */
