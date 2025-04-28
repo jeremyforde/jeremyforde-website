@@ -147,58 +147,7 @@ footer {
 /* Sigil Gallery Grid */
 .sigil-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 20px;
-}
-
-.sigil-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
-}
-
-.sigil-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.sigil-item:hover img {
-  transform: scale(1.05);
-}
-
-.sigil-item p {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffd700;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  font-weight: bold;
-}
-
-.sigil-item:hover p {
-  opacity: 1;
-}
-
-.sigil-image {
-  max-width: 200px;
-  height: auto;
-  display: block;
-  margin: 30px auto;
-}
-/* Sigil Gallery Thumbnails */
-.sigil-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Smaller grid cells */
   gap: 20px;
   padding: 20px;
 }
@@ -214,7 +163,7 @@ footer {
 .sigil-item img {
   width: 100%;
   height: auto;
-  max-height: 150px; /* Limits height for thumbnails */
+  max-height: 150px; /* Thumbnail height */
   object-fit: contain;
   display: block;
   transition: transform 0.3s;
@@ -240,4 +189,12 @@ footer {
 
 .sigil-item:hover p {
   opacity: 1;
+}
+
+/* Individual Sigil Image (used in content pages) */
+.sigil-image {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 30px auto;
 }
